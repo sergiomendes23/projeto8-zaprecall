@@ -1,0 +1,33 @@
+.menuInitial{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    flex-direction: column;
+}
+
+.logoImg {
+    width: 136px;
+    height: 161px;
+    margin-bottom: 30px;
+}
+.logoName{
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+button {
+    width: 246px;
+    height: 54px;
+    border-radius: 5px;
+    border-color: #D70900;
+    font-family: Recursive;
+    color: #D70900;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
