@@ -1,12 +1,17 @@
-import FirstPage from "./assets/componentes/FirstPage/FirstPage.js"
-import Header from "./assets/componentes/SecondPage/Header/Header.js"
-import "./assets/componentes/FirstPage/style.css";
+import React from "react";
+import FirstPage from "./assets/componentes/FirstPage/FirstPage.js";
+import SecondPage from "./assets/componentes/SecondPage/SecondPage.js";
+
+
 
 export default function App(){
+
+    const [second, setSecond] = React.useState('FirstPage')
+
     return(
         <>
-
-        <FirstPage/>
-    </>
+            {second === 'FirstPage' ? <FirstPage setSecond={setSecond} /> : <SecondPage />}
+        </>
     )
 }
+
