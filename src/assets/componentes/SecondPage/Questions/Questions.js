@@ -36,7 +36,8 @@ const itens = [{
     }
 ]
 
-export default function Questions () {
+export default function Questions ({getResponse}) {
+
 
     function startQuestion(){
         if(questions.length === 0){
@@ -44,9 +45,9 @@ export default function Questions () {
             setQuestion([...itens])
             return <></>
         }else{
-            return questions.map((question, title)=> {
+            return questions.map((question, title, index)=> {
                 const {front, verse} = question
-                return <QuestionAnswer title={title + 1} front={front} verse={verse} />
+                return <QuestionAnswer key={index} title={title + 1} front={front} verse={verse} getResponse={getResponse}/>
             })
         }
     }

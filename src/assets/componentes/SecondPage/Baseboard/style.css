@@ -4,12 +4,59 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #ffffff;
     position: fixed;
     bottom: 0;
 }
 .baseboard > h1{
     font-family: Recursive;
+    font-weight: 400;
+    font-size: 18px;
+}
+.baseboard > .wrong{
+    background-color: #FF3030;
+}
+.baseboard > .maybe{
+    background: #FF922E;
+}
+.baseboard > .right{
+    background: #2FBE34;
+}
+.iconsResponse{
+    display: flex;
+}
+.iconsAnswer{
+    display: flex;
+    margin-bottom: 15px;
+}
+.notificationWrong{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+.putz {
+    font-family: 'Recursive';
+    font-weight: 700;
+    font-size: 18px;
+}
+.notificationWrong > p{
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 18px;
+}
+img {
+    margin-right: 10px;
+}
+.finalResult{
+    margin-top: 15px;
+    font-family: 'Recursive';
     font-weight: 400;
     font-size: 18px;
 }

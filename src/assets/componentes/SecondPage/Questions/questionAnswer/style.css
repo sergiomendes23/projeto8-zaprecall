@@ -3,7 +3,6 @@
     justify-content: center;
 }
 .clickQuestion {
-    background-color: aqua;
     width: 300px;
     height: 65px;
     background: #FFFFFF;
@@ -28,7 +27,6 @@ ion-icon{
     cursor: pointer;
 }
 .clickAnswer{
-    background-color: aqua;
     width: 300px;
     height: 130px;
     background: #FFFFD5;
@@ -39,6 +37,7 @@ ion-icon{
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 25px;
+    position: relative;
 }
 .clickAnswer > img {
     width: 23px;
@@ -51,4 +50,58 @@ ion-icon{
     font-weight: 400;
     font-size: 16px;
     cursor: pointer;
+}
+.buttons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px; 
+}
+.wrong{
+    width: 86px;
+    height: 38px;
+    background: #FF3030;
+    border-radius: 5px;
+    margin-right: 11px;
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+}
+.maybe{
+    width: 86px;
+    height: 38px;
+    background: #FF922E;
+    border-radius: 5px;
+    margin-right: 11px;
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+}
+.right{
+    width: 86px;
+    height: 38px;
+    background: #2FBE34;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+}
+.final{
+    color: #2FBE34;
+    text-decoration-line: line-through;
+}
+.red{
+    color: #FF3030;
+    text-decoration-line: line-through;
+}
+.yellow{
+    color: #FF922E;
+    text-decoration-line: line-through;
 }
